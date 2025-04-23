@@ -1,0 +1,111 @@
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #f0f0f0;
+}
+.hero {
+  background: linear-gradient(to right, #880808, #ff1f1f);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  border-bottom: 4px solid #ff5a5a;
+}
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+.main-nav li {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.main-nav li:hover {
+  transform: scale(1.1);
+}
+.main-nav i {
+  font-size: 1.8rem;
+  display: block;
+}
+.main-nav span {
+  font-size: 0.8rem;
+}
+.slider {
+  padding: 2rem 1rem;
+}
+.slider h2 {
+  margin-bottom: 1rem;
+  color: #f55;
+}
+.product-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+}
+.product {
+  flex: 0 0 auto;
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 250px;
+  scroll-snap-align: start;
+  transition: transform 0.3s;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+.product img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+.more-link {
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+  color: #ff5a5a;
+  font-weight: bold;
+}
+.news {
+  padding: 2rem 1rem;
+  background-color: #222;
+}
+.news-item {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.news-item img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-top: 2px solid #ff3333;
+}
+footer .social a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+footer .social a:hover {
+  color: #ff3333;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+button:hover, .product:hover, .main-nav li:hover {
+  animation: pulse 0.5s;
+}
