@@ -1,58 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مرجع محصولات تکنولوژی</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات تکنولوژی</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="hero">
-    <h1>مرجع معرفی محصولات تکنولوژی</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><i class="bi bi-phone"></i><span>موبایل</span></li>
-        <li><i class="bi bi-laptop"></i><span>لپ‌تاپ</span></li>
-        <li><i class="bi bi-smartwatch"></i><span>گجت‌ها</span></li>
-        <li><i class="bi bi-headphones"></i><span>لوازم جانبی</span></li>
-        <li><i class="bi bi-bolt"></i><span>ویژه‌ها</span></li>
-        <li><i class="bi bi-newspaper"></i><span>اخبار</span></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="slider" id="mobile-slider">
-      <h2>محصولات موبایل</h2>
-      <div class="product-row">
-        <div class="product">
-          <img src="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.zoomit.ir/product/samsung-galaxy-s24-ultra/&ved=2ahUKEwil6P_YlO6MAxVa3QIHHY4UDmIQqa4BegQIChAA&sqi=2&usg=AOvVaw045DpfxwXGgr6gnxPQzOh-" alt="Galaxy S24 Ultra">
-          <h3>Galaxy S24 Ultra</h3>
-          <p>۸۸٬۹۵۰٬۰۰۰ تومان</p>
-          <p>نمایشگر 6.8", دوربین 200MP، باتری 5000mAh</p>
+    <header>
+        <h1>مرجع معرفی محصولات تکنولوژی</h1>
+        <nav>
+            <ul class="categories">
+                <li><img src="icons/mobile.png"><span>موبایل</span></li>
+                <li><img src="icons/laptop.png"><span>لپ‌تاپ</span></li>
+                <li><img src="icons/accessory.png"><span>لوازم جانبی</span></li>
+                <li><img src="icons/gadget.png"><span>گجت‌ها</span></li>
+                <li><img src="icons/news.png"><span>اخبار تکنولوژی</span></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="slider-section">
+        <h2>جدیدترین موبایل‌ها</h2>
+        <div class="slider-container">
+            <div class="slider" id="slider1">
+                <div class="product-card">
+                    <img src="images/s24.jpg">
+                    <h3>Galaxy S24 Ultra</h3>
+                    <p>88,965,000 تومان</p>
+                    <span>SDR، صفحه نمایش 6.8 اینچ، 200MP</span>
+                </div>
+                <div class="product-card">
+                    <img src="images/iphone15.jpg">
+                    <h3>iPhone 15 Pro</h3>
+                    <p>110,000,000 تومان</p>
+                    <span>صفحه XDR، چیپ A17 Pro</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <a href="#" class="more-link">مشاهده بیشتر در محصولات موبایل</a>
     </section>
-
-    <section class="news">
-      <h2>اخبار تکنولوژی</h2>
-      <div class="news-item">
-        <img src="images/news1.jpg" alt="خبر تکنولوژی">
-        <h3>عنوان خبر</h3>
-        <p>توضیح کوتاه درباره خبر تکنولوژی یا معرفی محصول خاص.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="social">
-      <a href="https://t.me/ar_769_y"><i class="bi bi-telegram"></i></a>
-      <a href="https://instagram.com/arash.hajivand0"><i class="bi bi-instagram"></i></a>
-    </div>
-    <p>طراحی شده با عشق برای تکنولوژی</p>
-  </footer>
+    <footer>
+        <a href="https://t.me/ar_769_y"><img src="icons/telegram.png" alt="تلگرام"></a>
+        <a href="https://instagram.com/arash.hajivand0"><img src="icons/instagram.png" alt="اینستاگرام"></a>
+    </footer>
 </body>
 </html>
